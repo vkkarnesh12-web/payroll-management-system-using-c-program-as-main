@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Payroll Management System</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-background">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h1>💼 Payroll Management</h1>
+                <p>Employee Salary Management System</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <h2>Login to Your Account</h2>
+
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn-login">Login</button>
+
+                <div id="loginError" class="error-message" style="display:none;"></div>
+                <div id="loginSuccess" class="success-message" style="display:none;"></div>
+
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+                    <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <div class="demo-info">
+                    <h4>Demo Credentials:</h4>
+                    <p>Email: <strong>admin@payroll.com</strong></p>
+                    <p>Password: <strong>admin123</strong></p>
+                    <p>Or create a new account via Sign Up</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
